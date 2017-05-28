@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import PropTypes from 'prop-types';
-// import simplemark from 'simplemark'; TODO
+import simplemark from 'simplemark';
 import warning from 'warning';
 
 export default class SimplemarkProvider extends React.Component {
@@ -26,9 +26,8 @@ export default class SimplemarkProvider extends React.Component {
 
   renderer = this.props.renderer;
 
-  renderSimeplmark = (source: string): Array<React$Element<any>> => [
-    <div>{source}</div>,
-  ]; // simplemark(source, this.renderer); TODO
+  renderSimeplmark = (source: string): Array<React$Element<any>> =>
+    simplemark(source, this.renderer);
 
   // props passed down to every instance of <Markdown>
   containerProps = this.props.containerProps;
