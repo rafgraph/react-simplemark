@@ -7,8 +7,7 @@
     "build": "yarn build-lib && yarn build-dist",
     "build-lib": "rm -rf lib && babel src -d lib && flow-copy-source src lib",
     "build-dist": "rm -rf dist && webpack src/index.js dist/react-simplemark.js && webpack -p src/index.js dist/react-simplemark.min.js",
-    "prepublish": "yarn unlink && yarn build",
-    "unlink": "yarn unlink simplemark && yarn add simplemark",
+    "prepublish": "yarn build",
     "dev": "yarn link simplemark && yarn link && babel src -d lib --watch & yarn watch \"flow-copy-source src lib\" src"
   },
   "files": [
@@ -55,6 +54,7 @@
     "webpack": "^2.5.0"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "simplemark": "^0.1.0"
   }
 }
