@@ -1,6 +1,6 @@
 {
   "name": "react-simplemark",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simplemark React component",
   "main": "lib/index.js",
   "scripts": {
