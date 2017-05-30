@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import simplemark from 'simplemark';
-import basicRenderer from './basicRenderer';
+import simplemarkReactRenderer from './simplemarkReactRenderer';
 
 export default class Simplemark extends React.PureComponent {
   props: {
@@ -25,7 +25,7 @@ export default class Simplemark extends React.PureComponent {
 
   static createRenderer(renderer) {
     return {
-      ...basicRenderer,
+      ...simplemarkReactRenderer,
       ...renderer,
     };
   }

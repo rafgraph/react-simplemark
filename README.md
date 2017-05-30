@@ -51,7 +51,7 @@ class App extends React.Component {
 #### `renderer: object`
 - Not required, but if it is not provided unstyled ReactElements will be created
 - Object with React Components for each type of element created by Simplemark
-- For a reference `renderer` with bare bones React Components see [`basicRenderer.js`](https://github.com/rafrex/react-simplemark/blob/master/src/basicRenderer.js)
+- For a reference `renderer` with bare bones React Components see [`simplemarkReactRenderer.js`](https://github.com/rafrex/react-simplemark/blob/master/src/simplemarkReactRenderer.js)
 ```js
 // list of all element types created by Simplemark
 // if an element type is not present, the default renderer for that type is used
