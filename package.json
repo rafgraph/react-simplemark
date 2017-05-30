@@ -55,6 +55,6 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
-    "simplemark": "^0.1.0"
+    "simplemark": "^0.2.0"
   }
 }
