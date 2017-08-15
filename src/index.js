@@ -15,12 +15,14 @@ export default class Simplemark extends React.PureComponent {
     children: PropTypes.string,
     as: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
     renderer: PropTypes.object,
+    containerRef: PropTypes.func,
   };
 
   static defaultProps = {
     children: null,
     as: 'div',
     renderer: {},
+    containerRef: null,
   };
 
   static createRenderer(renderer) {
@@ -39,11 +41,11 @@ export default class Simplemark extends React.PureComponent {
 
   render() {
     if (this.props.children === null) return null;
-    const { as, children, ...rest } = this.props;
+    const { as, children, containerRef, ...rest } = this.props;
     delete rest.renderer;
     const As = as;
     return (
-      <As {...rest}>
+      <As ref={containerRef} {...rest}>
         {simplemark(children, this.renderer)}
       </As>
     );
