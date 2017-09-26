@@ -54,7 +54,7 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
+    "prop-types": "^15.6.0",
     "simplemark": "^0.2.1"
   }
 }
