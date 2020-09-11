@@ -1,8 +1,8 @@
 # React Simplemark
 
-[Live Example](http://simplemark.rafrex.com)
+[Demo website](https://simplemark.rafgraph.dev)
 
-React component and renderer for [Simplemark](https://github.com/rafrex/simplemark) (*never* uses `dangerouslySetInnerHTML`). Code styled with Prettier.
+React component and renderer for [Simplemark](https://github.com/rafgraph/simplemark) (*never* uses `dangerouslySetInnerHTML`). Code styled with Prettier.
 
 ```shell
 $ yarn add react-simplemark
@@ -51,7 +51,7 @@ class App extends React.Component {
 #### `renderer: object`
 - Not required, but if it is not provided unstyled ReactElements will be created
 - Object with React Components for each type of element created by Simplemark
-- For a reference `renderer` with bare bones React Components see [`simplemarkReactRenderer.js`](https://github.com/rafrex/react-simplemark/blob/master/src/simplemarkReactRenderer.js)
+- For a reference `renderer` with bare bones React Components see [`simplemarkReactRenderer.js`](https://github.com/rafgraph/react-simplemark/blob/main/src/simplemarkReactRenderer.js)
 ```js
 // list of all element types created by Simplemark
 // if an element type is not present, the default renderer for that type is used

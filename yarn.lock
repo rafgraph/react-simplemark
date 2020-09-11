@@ -3170,9 +3170,10 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-simplemark@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/simplemark/-/simplemark-0.2.1.tgz#50e18dede9f150478d17f2bdc85e7736dadb1b29"
+simplemark@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/simplemark/-/simplemark-0.2.2.tgz#b61f4e9832b0d20fe6ca66f5492e3e22c2b6d217"
+  integrity sha512-XLERACuKSU3LHzWTsu8PdNLZtuRpDvKESTHzx7nLhGZKQZn/fNPx0dlPdDe2vsC0sOBafnWfRh+AeS/CtKFIhQ==
 
 slash@^1.0.0:
   version "1.0.0"

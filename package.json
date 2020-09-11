@@ -17,16 +17,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/react-simplemark.git"
+    "url": "git+https://github.com/rafgraph/react-simplemark.git"
   },
   "keywords": [
     "simplemark",
     "react"
   ],
-  "author": "Rafael Pedicini <code@rafrex.com>",
+  "author": "Rafael Pedicini <rafael@rafgraph.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rafrex/react-simplemark/issues"
+    "url": "https://github.com/rafgraph/react-simplemark/issues"
   },
   "peerDependencies": {
     "react": ">=15"
@@ -55,6 +55,6 @@
   },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "simplemark": "^0.2.1"
+    "simplemark": "^0.2.2"
   }
 }
