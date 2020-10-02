@@ -1,37 +1,74 @@
-// @flow
 import React from 'react';
+import PropTypes from 'prop-types';
+
+const Heading = (props) => {
+  const H = `h${props.level}`;
+  return <H key={props.key}>{props.children}</H>;
+};
+Heading.propTypes = {
+  level: PropTypes.number.isRequired,
+  children: PropTypes.node,
+  key: PropTypes.number.isRequired,
+};
+
+const Paragraph = (props) => {
+  return <p key={props.key}>{props.children}</p>;
+};
+Paragraph.propTypes = {
+  children: PropTypes.node,
+  key: PropTypes.number.isRequired,
+};
+
+const Link = (props) => {
+  return (
+    <a href={props.href} title={props.title} key={props.key}>
+      {props.children}
+    </a>
+  );
+};
+Link.propTypes = {
+  href: PropTypes.string,
+  title: PropTypes.string,
+  children: PropTypes.node,
+  key: PropTypes.number.isRequired,
+};
+
+const Emph = (props) => {
+  return <em key={props.key}>{props.children}</em>;
+};
+Emph.propTypes = {
+  children: PropTypes.node,
+  key: PropTypes.number.isRequired,
+};
+
+const Strong = (props) => {
+  return <strong key={props.key}>{props.children}</strong>;
+};
+Strong.propTypes = {
+  children: PropTypes.node,
+  key: PropTypes.number.isRequired,
+};
+
+const InlineBreak = (props) => {
+  return <br key={props.key} />;
+};
+InlineBreak.propTypes = {
+  key: PropTypes.number.isRequired,
+};
+
+const BlockBreak = (props) => {
+  return <br key={props.key} />;
+};
+BlockBreak.propTypes = {
+  key: PropTypes.number.isRequired,
+};
 
 export default {
-  Heading(props: { level: number, children: any, key: number }) {
-    const H = `h${props.level}`;
-    return <H key={props.key}>{props.children}</H>;
-  },
-
-  Paragraph(props: { children: any, key: number }) {
-    return <p key={props.key}>{props.children}</p>;
-  },
-
-  Link(props: { href: string, title?: string, children: any, key: number }) {
-    return (
-      <a href={props.href} title={props.title} key={props.key}>
-        {props.children}
-      </a>
-    );
-  },
-
-  Emph(props: { children: any, key: number }) {
-    return <em key={props.key}>{props.children}</em>;
-  },
-
-  Strong(props: { children: any, key: number }) {
-    return <strong key={props.key}>{props.children}</strong>;
-  },
-
-  InlineBreak(props: { key: number }) {
-    return <br key={props.key} />;
-  },
-
-  BlockBreak(props: { key: number }) {
-    return <br key={props.key} />;
-  },
+  Heading,
+  Paragraph,
+  Link,
+  Emph,
+  Strong,
+  InlineBreak,
+  BlockBreak,
 };

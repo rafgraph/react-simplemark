@@ -66,9 +66,6 @@ const renderer = {
 };
 ```
 
-#### `containerRef: function`
-- Not required, but if provided it will be passed down as `ref={containerRef}` to the simplemark container element.
-
 #### `...rest`
 - All other props will be passed down to the simplemark container element, e.g. `className`, `style`, etc...
 - For example `<Simplemark as="section" className="simplemark-container"># Some Heading</Simplemark>` will render on the page as `<section class="simplemark-container"><h1>Some Heading</h1><section/>`
